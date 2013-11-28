@@ -26,13 +26,6 @@ $blue4: #4e7881;
 
 /*-- Global --*/
 
-@font-face {
-	font-family: "Museo Slab";
-	font-style: normal;
-	src: url('../fonts/Museo_Slab_500.otf');
-}
-/* A font by Jos Buivenga (exljbris) -> www.exljbris.com */
-
 html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, acronym, cite, em, font, img, sup, ol, ul, li, fieldset, form, label, input  {
 	margin: 0;
 	padding: 0;
@@ -45,7 +38,7 @@ html {
 body {
 	position: relative;
 	min-width: 320px;
-	font-family: "PT Serif", Georgia, serif;
+	font-family: "pt-serif", Georgia, serif;
 	font-weight: normal;
 	font-size: 100%;
 	line-height: 1.4em;
@@ -55,7 +48,7 @@ body {
 	-webkit-text-size-adjust: none;
 	overflow-x: hidden; }
 	h1, h2, h3, h4, h5, h6 {
-		font-family: "Museo Slab", Helvetica, sans-serif;
+		font-family: "museo-slab", Helvetica, sans-serif;
 		-webkit-font-smoothing: antialiased;
 		text-rendering: optimizeLegibility; }
 	h2 {
