@@ -1,18 +1,4 @@
-@font-face {
-	font-family: "Museo Slab";
-	font-style: normal;
-	src: url('../fonts/Museo_Slab_500.otf');
-}
-/* A font by Jos Buivenga (exljbris) -> www.exljbris.com */
-
-html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, acronym, cite, em, font, img, sup, ol, ul, li, fieldset, form, label, input  {
-	margin: 0;
-	padding: 0;
-	outline: 0;
-	font-weight: normal; }
-
-html {
-	height: 100%; }
+/*-- Variables --*/
 
 /*
 $brown1: #f8f7f1;
@@ -37,6 +23,24 @@ $blue3: #7fb2be;
 $blue4: #4e7881;
 */
 
+
+/*-- Global --*/
+
+@font-face {
+	font-family: "Museo Slab";
+	font-style: normal;
+	src: url('../fonts/Museo_Slab_500.otf');
+}
+/* A font by Jos Buivenga (exljbris) -> www.exljbris.com */
+
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, acronym, cite, em, font, img, sup, ol, ul, li, fieldset, form, label, input  {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-weight: normal; }
+
+html {
+	height: 100%; }
 
 body {
 	position: relative;
@@ -73,6 +77,8 @@ body {
 	::selection {
         background: #ffe372; }
 
+
+/*-- Home --*/
 
 	.graphic {
   	height: 720px;
