@@ -1,0 +1,108 @@
+@font-face {
+	font-family: "Museo Slab";
+	font-style: normal;
+	src: url('../fonts/Museo_Slab_500.otf');
+}
+/* A font by Jos Buivenga (exljbris) -> www.exljbris.com */
+
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, acronym, cite, em, font, img, sup, ol, ul, li, fieldset, form, label, input  {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-weight: normal; }
+
+html {
+	height: 100%; }
+
+/*
+$brown1: #f8f7f1;
+$brown2: #eceae0;
+$brown3: #9f9085;
+$brown4: #5e4941;
+$brown5: #321912;
+
+$red1: #e89c89;
+$red2: #c2674f;
+$red3: #9d3b22;
+$red4: #602417;
+
+$yellow1: #ffefb2;
+$yellow2: #ffe372;
+$yellow3: #eac21d;
+$yellow4: #af812d;
+
+$blue1: #cfecf7;
+$blue2: #acdeea;
+$blue3: #7fb2be;
+$blue4: #4e7881;
+*/
+
+
+body {
+	position: relative;
+	min-width: 320px;
+	font-family: "PT Serif", Georgia, serif;
+	font-weight: normal;
+	font-size: 100%;
+	line-height: 1.4em;
+	text-align: center;
+	color: #f8f7f1;
+	background: url('../images/noise.png') top left repeat #602417;
+	-webkit-text-size-adjust: none;
+	overflow-x: hidden; }
+	h1, h2, h3, h4, h5, h6 {
+		font-family: "Museo Slab", Helvetica, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		text-rendering: optimizeLegibility; }
+	h2 {
+	  font-size: 1.25em;
+		margin-bottom: 0.25em;
+		color: #f8f7f1; }
+  h3 {
+    color: #ffe372;
+  }
+	p {
+		padding-bottom: 1em; }
+	a {
+		color: #acdeea;
+		-webkit-transition: color 0.15s ease;
+		-moz-transition: color 0.15s ease;
+		transition: color 0.15s ease; }
+		a:hover {
+			color: #7fb2Be; }
+	::selection {
+        background: #ffe372; }
+
+
+	.graphic {
+  	height: 720px;
+  	margin-top: -350px;
+  	background: url('../images/circles.svg') center center no-repeat transparent;
+	}
+	.teaser {
+	  position: relative;
+	  top: -180px;
+	}
+  	.teaser .logo {
+  		margin-bottom: 4em;
+    }
+    .teaser ul {
+      padding-top: 1em;
+      font-size: 1.5em;
+    }
+      .teaser ul li {
+        display: inline-block;
+      }
+        .teaser ul li a {
+          margin: 0 0.5em;
+        }
+    .teaser p a {
+      display: block;
+      font-size: 0.8em;
+      margin-top: 2em;
+      color: #9d3b22;
+      text-decoration: none;
+    }
+      .teaser p a:hover {
+        color: #c2674f;
+      }
