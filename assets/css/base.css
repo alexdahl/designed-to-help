@@ -38,7 +38,7 @@ html {
 body {
 	position: relative;
 	min-width: 320px;
-	font-family: "pt-serif", Georgia, serif;
+	font-family: "adelle-sans", Georgia, serif;
 	font-weight: normal;
 	font-size: 100%;
 	line-height: 1.4em;
@@ -48,7 +48,7 @@ body {
 	-webkit-text-size-adjust: none;
 	overflow-x: hidden; }
 	h1, h2, h3, h4, h5, h6 {
-		font-family: "museo-slab", Helvetica, sans-serif;
+		font-family: "adelle", Helvetica, sans-serif;
 		-webkit-font-smoothing: antialiased;
 		text-rendering: optimizeLegibility; }
 	h2 {
