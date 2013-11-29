@@ -1,0 +1,111 @@
+// Variables
+
+$brown1:  #fcfbf1;
+$brown2:  #f4f1dc;
+$brown3:  #d3c6a1;
+$brown4:  #403521;
+
+$red1:    #efb16f;
+$red2:    #dd8442;
+$red3:    #bb481d;
+$red4:    #802c13;
+
+$yellow1: #fef3a5;
+$yellow2: #fdea5d;
+$yellow3: #f0cf28;
+$yellow4: #d2a32d;
+
+$blue1:   #e0f0f6;
+$blue2:   #c8e5e8;
+$blue3:   #95ccca;
+$blue4:   #689f7b;
+
+
+// Global
+
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, acronym, cite, em, font, img, sup, ol, ul, li, fieldset, form, label, input  {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-weight: normal;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	min-width: 320px;
+	font-family: "adelle-sans", Georgia, serif;
+	font-weight: normal;
+	font-size: 100%;
+	line-height: 1.4em;
+	text-align: center;
+	color: $brown1;
+	background-color: $red4;
+	-webkit-text-size-adjust: none;
+	overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "adelle", Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+h2 {
+  font-size: 1.25em;
+	margin-bottom: 0.25em;
+	color: $brown1;
+}
+h3 {
+  color: $yellow2;
+}
+p {
+	padding-bottom: 1em;
+}
+a {
+	color: $blue2;
+	transition: color 0.15s ease;
+	&:hover {
+		color: $blue3; }
+}
+::selection {
+  background: $yellow3; }
+
+
+// Home
+
+.graphic {
+	height: 720px;
+	margin-top: -350px;
+	background: url('../images/circles.svg') center center no-repeat transparent;
+}
+.teaser {
+  position: relative;
+  top: -180px;
+	.logo {
+		margin-bottom: 4em;
+  }
+  ul {
+    padding-top: 1em;
+    font-size: 1.5em;
+    li {
+      display: inline-block;
+      a {
+        margin: 0 0.5em;
+      }
+    }
+  }
+  p  {
+    display: block;
+      margin-top: 2em;
+    a {
+      font-size: 0.8em;
+      color: $red3;
+      text-decoration: none;
+      &:hover {
+        color: $red2;
+      }
+    }
+  }
+}
