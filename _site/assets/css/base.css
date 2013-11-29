@@ -1,107 +1,111 @@
-/*-- Variables --*/
+/* line 26, /Users/alexdahl/Documents/Repository/designed-to-help/assets/css/base.scss */
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, acronym, cite, em, font, img, sup, ol, ul, li, fieldset, form, label, input {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-weight: normal;
+}
 
-/*
-$brown1: #f8f7f1;
-$brown2: #eceae0;
-$brown3: #9f9085;
-$brown4: #5e4941;
-$brown5: #321912;
-
-$red1: #e89c89;
-$red2: #c2674f;
-$red3: #9d3b22;
-$red4: #602417;
-
-$yellow1: #ffefb2;
-$yellow2: #ffe372;
-$yellow3: #eac21d;
-$yellow4: #af812d;
-
-$blue1: #cfecf7;
-$blue2: #acdeea;
-$blue3: #7fb2be;
-$blue4: #4e7881;
-*/
-
-
-/*-- Global --*/
-
-html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, acronym, cite, em, font, img, sup, ol, ul, li, fieldset, form, label, input  {
-	margin: 0;
-	padding: 0;
-	outline: 0;
-	font-weight: normal; }
-
+/* line 33, /Users/alexdahl/Documents/Repository/designed-to-help/assets/css/base.scss */
 html {
-	height: 100%; }
+  height: 100%;
+}
 
+/* line 37, /Users/alexdahl/Documents/Repository/designed-to-help/assets/css/base.scss */
 body {
-	position: relative;
-	min-width: 320px;
-	font-family: "adelle-sans", Georgia, serif;
-	font-weight: normal;
-	font-size: 100%;
-	line-height: 1.4em;
-	text-align: center;
-	color: #f8f7f1;
-	background: url('../images/noise.png') top left repeat #602417;
-	-webkit-text-size-adjust: none;
-	overflow-x: hidden; }
-	h1, h2, h3, h4, h5, h6 {
-		font-family: "adelle", Helvetica, sans-serif;
-		-webkit-font-smoothing: antialiased;
-		text-rendering: optimizeLegibility; }
-	h2 {
-	  font-size: 1.25em;
-		margin-bottom: 0.25em;
-		color: #f8f7f1; }
-  h3 {
-    color: #ffe372;
-  }
-	p {
-		padding-bottom: 1em; }
-	a {
-		color: #acdeea;
-		-webkit-transition: color 0.15s ease;
-		-moz-transition: color 0.15s ease;
-		transition: color 0.15s ease; }
-		a:hover {
-			color: #7fb2Be; }
-	::selection {
-        background: #ffe372; }
+  position: relative;
+  min-width: 320px;
+  font-family: "adelle-sans", Georgia, serif;
+  font-weight: normal;
+  font-size: 100%;
+  line-height: 1.4em;
+  text-align: center;
+  color: #fcfbf1;
+  background-color: #802c13;
+  -webkit-text-size-adjust: none;
+  overflow-x: hidden;
+}
 
+/* line 50, /Users/alexdahl/Documents/Repository/designed-to-help/assets/css/base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "adelle", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
 
-/*-- Home --*/
+/* line 55, /Users/alexdahl/Documents/Repository/designed-to-help/assets/css/base.scss */
+h2 {
+  font-size: 1.25em;
+  margin-bottom: 0.25em;
+  color: #fcfbf1;
+}
 
-	.graphic {
-  	height: 720px;
-  	margin-top: -350px;
-  	background: url('../images/circles.svg') center center no-repeat transparent;
-	}
-	.teaser {
-	  position: relative;
-	  top: -180px;
-	}
-  	.teaser .logo {
-  		margin-bottom: 4em;
-    }
-    .teaser ul {
-      padding-top: 1em;
-      font-size: 1.5em;
-    }
-      .teaser ul li {
-        display: inline-block;
-      }
-        .teaser ul li a {
-          margin: 0 0.5em;
-        }
-    .teaser p a {
-      display: block;
-      font-size: 0.8em;
-      margin-top: 2em;
-      color: #9d3b22;
-      text-decoration: none;
-    }
-      .teaser p a:hover {
-        color: #c2674f;
-      }
+/* line 60, /Users/alexdahl/Documents/Repository/designed-to-help/assets/css/base.scss */
+h3 {
+  color: #fdea5d;
+}
+
+/* line 63, /Users/alexdahl/Documents/Repository/designed-to-help/assets/css/base.scss */
+p {
+  padding-bottom: 1em;
+}
+
+/* line 66, /Users/alexdahl/Documents/Repository/designed-to-help/assets/css/base.scss */
+a {
+  color: #c8e5e8;
+  transition: color 0.15s ease;
+}
+/* line 69, /Users/alexdahl/Documents/Repository/designed-to-help/assets/css/base.scss */
+a:hover {
+  color: #95ccca;
+}
+
+/* line 72, /Users/alexdahl/Documents/Repository/designed-to-help/assets/css/base.scss */
+::selection {
+  background: #f0cf28;
+}
+
+/* line 78, /Users/alexdahl/Documents/Repository/designed-to-help/assets/css/base.scss */
+.graphic {
+  height: 720px;
+  margin-top: -350px;
+  background: url("../images/circles.svg") center center no-repeat transparent;
+}
+
+/* line 83, /Users/alexdahl/Documents/Repository/designed-to-help/assets/css/base.scss */
+.teaser {
+  position: relative;
+  top: -180px;
+}
+/* line 86, /Users/alexdahl/Documents/Repository/designed-to-help/assets/css/base.scss */
+.teaser .logo {
+  margin-bottom: 4em;
+}
+/* line 89, /Users/alexdahl/Documents/Repository/designed-to-help/assets/css/base.scss */
+.teaser ul {
+  padding-top: 1em;
+  font-size: 1.5em;
+}
+/* line 92, /Users/alexdahl/Documents/Repository/designed-to-help/assets/css/base.scss */
+.teaser ul li {
+  display: inline-block;
+}
+/* line 94, /Users/alexdahl/Documents/Repository/designed-to-help/assets/css/base.scss */
+.teaser ul li a {
+  margin: 0 0.5em;
+}
+/* line 99, /Users/alexdahl/Documents/Repository/designed-to-help/assets/css/base.scss */
+.teaser p {
+  display: block;
+  margin-top: 2em;
+}
+/* line 102, /Users/alexdahl/Documents/Repository/designed-to-help/assets/css/base.scss */
+.teaser p a {
+  font-size: 0.8em;
+  color: #bb481d;
+  text-decoration: none;
+}
+/* line 106, /Users/alexdahl/Documents/Repository/designed-to-help/assets/css/base.scss */
+.teaser p a:hover {
+  color: #dd8442;
+}
