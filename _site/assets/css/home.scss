@@ -1,0 +1,18 @@
+.first {
+
+  box-sizing: border-box;
+  padding-bottom: 4rem;
+  background: linear-gradient(to bottom, fade-out($red4, 1) 75%, $red4 100%), url('../images/bridge.jpg') top center / cover no-repeat $red4;
+  @media screen and (min-width: $tablet) {
+    height: 100%;
+  }
+
+  h2,
+  h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.2em;
+  }
+
+}
