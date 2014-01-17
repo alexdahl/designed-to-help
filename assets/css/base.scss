@@ -3,7 +3,7 @@
 $brown1:  #fcfbf1;
 $brown2:  #f4f1dc;
 $brown3:  #d3c6a1;
-$brown4:  #403521;
+$brown4:  #625233;
 
 $red1:    #efb16f;
 $red2:    #dd8442;
@@ -16,9 +16,9 @@ $yellow3: #f0cf28;
 $yellow4: #d2a32d;
 
 $blue1:   #e0f0f6;
-$blue2:   #c8e5e8;
-$blue3:   #95ccca;
-$blue4:   #689f7b;
+$blue2:   #a7dee9;
+$blue3:   #41c0ca;
+$blue4:   #559c7b;
 
 $tablet:  750px;
 $desktop: 1200px;
@@ -48,17 +48,27 @@ html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, a
     clear:both;
   }
 }
+.clear {
+  @include clear;
+}
 
 .row {
   margin: 0 -1rem;
   @include clear;
 }
+
 .column,
 .columns {
   float: left;
   box-sizing: border-box;
   padding: 0 1rem;
 }
+
+.desktop,
+.tablet {
+  display: none;
+}
+
 @media screen and (max-width: ($tablet - 1)) {
   .container {
   	width: 16em;
@@ -89,10 +99,19 @@ html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, a
   .column {
     &.one     { width: percentage( 1 / 12); }
   }
+  .mobile {
+    display: none !important;
+  }
+  .tablet {
+    display: inline-block;
+  }
 }
 @media screen and (min-width: $desktop) {
   .container {
   	width: 62em;
+  }
+  .desktop {
+    display: inline-block;
   }
 }
 
@@ -100,27 +119,23 @@ html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, a
 
 // Global
 
-html {
-  height: 100%;
-}
-
 body {
 	position: relative;
 	min-width: 320px;
 	font-family: "adelle-sans", Georgia, serif;
 	font-weight: normal;
 	font-size: 100%;
-	line-height: 1.4em;
+	line-height: 1.4rem;
 	color: $brown1;
 	background-color: $red4;
 	-webkit-text-size-adjust: none;
 	overflow-x: hidden;
-	height: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: "adelle", Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+	line-height: 1.2em;
 }
 h2 {
   font-size: 1.25em;
@@ -128,60 +143,78 @@ h2 {
 	color: $brown1;
 }
 h3 {
-  color: $yellow2;
+  margin-bottom: 0.25em;
 }
 p {
 	padding-bottom: 1em;
 }
 a {
-	color: $blue2;
+	color: $blue3;
+	text-decoration: none;
 	transition: color 0.15s ease;
 	&:hover {
-		color: $blue3; }
+		color: $yellow3; }
+}
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 2px solid $red1;
+  border-radius: 2px;
+  transition-property: color, border-color;
+  &:hover {
+    color: $yellow3;
+    border-color: $yellow3;
+  }
 }
 ::selection {
   background: $yellow3; }
+
+
+nav {
+  li {
+    display: inline-block;
+    a {
+      color: $brown2;
+      &:hover {
+        color: $yellow3;
+      }
+    }
+  }
+}
+
 
 header {
   padding: 4rem 0;
   .logo {
     box-sizing: border-box;
     height: 100px;
-    padding: 2.5rem 0 2.5rem 4.5rem;
+    margin-left: 1rem;
+    padding: 2.3rem 0 2.3rem 4.5rem;
     background: url('../images/mark.svg') left center no-repeat transparent;
     background-size: 3.5rem;
+    @media screen and (min-width: $tablet) {
+      margin-left: 0;
+    }
   }
-}
 
-nav {
-  margin: 1rem;
-  font-size: 1.5rem;
-  li {
-    display: inline-block;
-    a {
-      margin: 0 0.5em;
-      color: $brown2;
-      &:hover {
-        color: $blue3;
+  nav {
+    display: none;
+    margin-top: 2rem;
+    text-align: right;
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
+    li {
+      a {
+        margin-left: 1.5rem;
+        @media screen and (min-width: $desktop) {
+          margin-left: 2rem;
+        }
       }
     }
   }
-}
 
-footer {
-  margin-top: 7rem;
-  margin-bottom: 4rem;
-  text-align: center;
-  p {
-    a {
-      font-size: 0.8rem;
-      color: $red1;
-      text-decoration: none;
-      &:hover {
-        color: $blue3;
-      }
-    }
-  }
 }
 
 @import "home";
