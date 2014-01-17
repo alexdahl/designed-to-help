@@ -21,7 +21,7 @@ $blue3:   #95ccca;
 $blue4:   #689f7b;
 
 
-// Global
+// Grid
 
 html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, acronym, cite, em, font, img, sup, ol, ul, li, fieldset, form, label, input  {
 	margin: 0;
@@ -30,8 +30,75 @@ html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, a
 	font-weight: normal;
 }
 
+.container {
+	margin: 0 auto;
+  width: 18rem;
+}
+
+@mixin clear {
+  &:before,
+  &:after {
+      content:"";
+      display:table;
+  }
+  &:after {
+      clear:both;
+  }
+}
+
+.row {
+  margin: 0 -1rem;
+  @include clear;
+}
+.column,
+.columns {
+  float: left;
+  box-sizing: border-box;
+  padding: 0 1rem;
+}
+@media screen and (max-width: 749px) {
+  .container {
+  	width: 16em;
+  }
+  .column,
+  .columns {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .container {
+  	width: 41em;
+  }
+  .columns {
+    &.one     { width: percentage( 1 / 12); }
+    &.two     { width: percentage( 2 / 12); }
+    &.three   { width: percentage( 3 / 12); }
+    &.four    { width: percentage( 4 / 12); }
+    &.five    { width: percentage( 5 / 12); }
+    &.six     { width: percentage( 6 / 12); }
+    &.seven   { width: percentage( 7 / 12); }
+    &.eight   { width: percentage( 8 / 12); }
+    &.nine    { width: percentage( 9 / 12); }
+    &.ten     { width: percentage(10 / 12); }
+    &.eleven  { width: percentage(11 / 12); }
+    &.twelve  { width: 100%; }
+  }
+  .column {
+    &.one     { width: percentage( 1 / 12); }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+  	width: 62em;
+  }
+}
+
+
+
+// Global
+
 html {
-	height: 100%;
+  height: 100%;
 }
 
 body {
@@ -41,11 +108,11 @@ body {
 	font-weight: normal;
 	font-size: 100%;
 	line-height: 1.4em;
-	text-align: center;
 	color: $brown1;
 	background-color: $red4;
 	-webkit-text-size-adjust: none;
 	overflow-x: hidden;
+	height: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: "adelle", Helvetica, sans-serif;
@@ -72,37 +139,65 @@ a {
 ::selection {
   background: $yellow3; }
 
-
-// Home
-
-.graphic {
-	height: 720px;
-	margin-top: -350px;
-	background: url('../images/circles.svg') center center no-repeat transparent;
+header {
+  padding: 4rem 0;
+  .logo {
+    box-sizing: border-box;
+    height: 100px;
+    padding: 2.5rem 0 2.5rem 4.5rem;
+    background: url('../images/mark.svg') left center no-repeat transparent;
+    background-size: 3.5rem;
+  }
 }
-.teaser {
-  position: relative;
-  top: -250px;
-  ul {
-    padding-top: 1em;
-    font-size: 1.5em;
-    li {
-      display: inline-block;
-      a {
-        margin: 0 0.5em;
+
+nav {
+  margin: 1rem;
+  font-size: 1.5rem;
+  li {
+    display: inline-block;
+    a {
+      margin: 0 0.5em;
+      color: $brown2;
+      &:hover {
+        color: $blue3;
       }
     }
   }
-  p  {
-    display: block;
-      margin-top: 2em;
+}
+
+footer {
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  p {
     a {
-      font-size: 0.8em;
-      color: $red3;
+      font-size: 0.8rem;
+      color: $red1;
       text-decoration: none;
       &:hover {
-        color: $red2;
+        color: $blue3;
       }
     }
+  }
+}
+
+
+// Home
+
+.first {
+  box-sizing: border-box;
+  padding-bottom: 4rem;
+  background: linear-gradient(to bottom, transparent 75%, $red4 100%), url('../images/bridge.jpg') top center / cover no-repeat $red4;
+
+  @media screen and (min-width: 750px) {
+    height: 100%;
+  }
+
+  h2,
+  h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.2em;
   }
 }
