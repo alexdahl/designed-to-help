@@ -138,7 +138,7 @@ footer {
 .first {
   box-sizing: border-box;
   padding-bottom: 4rem;
-  background: linear-gradient(to bottom, transparent 75%, #802c13 100%), url("../images/bridge.jpg") top center/cover no-repeat #802c13; }
+  background: linear-gradient(to bottom, rgba(128, 44, 19, 0) 75%, #802c13 100%), url("../images/bridge.jpg") top center/cover no-repeat #802c13; }
   @media screen and (min-width: 750px) {
     .first {
       height: 100%; } }
