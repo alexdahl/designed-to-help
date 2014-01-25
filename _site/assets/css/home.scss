@@ -3,8 +3,8 @@
   min-height: 600px;
   padding-bottom: 4rem;
   background: url('../images/bridge.jpg') top center / cover no-repeat $red4;
-  h2,
-  h3 {
+  h2 {
+    color: $yellow1;
     margin-bottom: 1rem;
     font-size: 2.5em;
   }

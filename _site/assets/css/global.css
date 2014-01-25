@@ -169,8 +169,8 @@ header {
   min-height: 600px;
   padding-bottom: 4rem;
   background: url("../images/bridge.jpg") top center/cover no-repeat #802c13; }
-  .intro h2,
-  .intro h3 {
+  .intro h2 {
+    color: #fef3a5;
     margin-bottom: 1rem;
     font-size: 2.5em; }
 
