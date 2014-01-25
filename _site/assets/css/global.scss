@@ -166,9 +166,18 @@ a {
     color: $yellow3;
     border-color: $yellow3;
   }
+  &.active {
+    color: white;
+    background-color: $yellow3;
+    border-color: $yellow3;
+  }
 }
 ::selection {
-  background: $yellow3; }
+  background: $yellow3;
+}
+.hide {
+  display: none;
+}
 
 
 nav {
@@ -213,8 +222,32 @@ header {
         }
       }
     }
+    .share.button {
+      box-sizing: border-box;
+      width: 78px;
+    }
   }
-
+  .share-panel {
+    box-sizing: border-box;
+    position: relative;
+    float: right;
+    top: -2px;
+    width: 78px;
+    height: 7rem;
+    padding: 1rem 12px;
+    margin-bottom: -7rem;
+    text-align: center;
+    background: white;
+    border-top: 2px solid $yellow3;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    -webkit-transform-origin: top center;
+    -webkit-transform: perspective(350px) rotateX(-90deg);
+    transition: -webkit-transform 0.25s ease;
+    .fb-share-button {
+      padding: 1px 0 8px 0;
+    }
+  }
 }
 
 @import "home";

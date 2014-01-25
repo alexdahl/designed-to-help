@@ -128,9 +128,16 @@ a {
   .button:hover {
     color: #f0cf28;
     border-color: #f0cf28; }
+  .button.active {
+    color: white;
+    background-color: #f0cf28;
+    border-color: #f0cf28; }
 
 ::selection {
   background: #f0cf28; }
+
+.hide {
+  display: none; }
 
 nav li {
   display: inline-block; }
@@ -163,6 +170,28 @@ header {
       @media screen and (min-width: 1200px) {
         header nav li a {
           margin-left: 2rem; } }
+    header nav .share.button {
+      box-sizing: border-box;
+      width: 78px; }
+  header .share-panel {
+    box-sizing: border-box;
+    position: relative;
+    float: right;
+    top: -2px;
+    width: 78px;
+    height: 7rem;
+    padding: 1rem 12px;
+    margin-bottom: -7rem;
+    text-align: center;
+    background: white;
+    border-top: 2px solid #f0cf28;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    -webkit-transform-origin: top center;
+    -webkit-transform: perspective(350px) rotateX(-90deg);
+    transition: -webkit-transform 0.25s ease; }
+    header .share-panel .fb-share-button {
+      padding: 1px 0 8px 0; }
 
 .intro {
   box-sizing: border-box;
