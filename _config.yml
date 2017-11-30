@@ -1,5 +1,5 @@
 name: Designed to Help
-markdown: redcarpet
-pygments: true
+markdown: kramdown
+highlighter: rouge
 encoding: UTF-8
 exclude: [CNAME, Gemfile, Gemfile.lock, README.md]
